@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    main {
+        width: 746px;
+        padding-top: 70px;
+        padding-left: 68px;
+        .header {
+            display: flex;
+            .headerImg {
+                img {
+                    width: 260px;
+                    border-radius: 100%;
+                    box-shadow: 0 0 7px #666;
+                }
+            }
+            .headerInfo {
+                margin-left: 44px;
+                color: #666666;
+                .nameNposition {
+                    font-family: 'Roboto', sans-serif;
+                    text-transform: uppercase;
+                    align-items: center;
+                    h1 {
+                        font-size: 38px;
+                        margin-top: 9px;
+                        margin-bottom: 0;
+                        letter-spacing: -1.5px;
+                        .firstName {
+                            color: #42489E;
+                            font-weight: 900;
+                        }
+                        .lastName {
+                            font-weight: 300;
+                        }
+                    }
+                    h2 {
+                        font-weight: 400;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                    }
+                    
+                }
+            }
+            
+            .contacts {
+                list-style-type: none;
+                margin-top: 43px;
+                padding-left: 0;
+                font-weight: 400;
+                letter-spacing: 1px;
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        padding-left: 26px;
+                    }
+                    .tel {
+                        background: url(../img/tel.svg) no-repeat 0 center;
+                    }
+                }
+            }
+        }
+    }
+    aside {
+        width: 450px;
+        background: linear-gradient(180deg, #6D5DA8 0%, #43479E 100%);
+        padding: 100px;
+    }
+}
