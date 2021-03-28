@@ -17,6 +17,7 @@ body {
 }
 .container main .header {
   display: flex;
+  margin-bottom: 63px;
 }
 .container main .header .headerImg img {
   width: 260px;
@@ -65,11 +66,69 @@ body {
   color: inherit;
   padding-left: 26px;
 }
-.container main .header .contacts li .tel {
+.container main .header .contacts li .tel,
+.container main .header .contacts li .mail,
+.container main .header .contacts li .workPlace,
+.container main .header .contacts li .geoloc {
+  position: relative;
+}
+.container main .header .contacts li .tel::before {
+  content: "";
+  position: absolute;
   background: url(../img/tel.svg) no-repeat 0 center;
+  background-size: contain;
+  width: 16px;
+  height: 17px;
+  top: 1px;
+  left: 1px;
+}
+.container main .header .contacts li .mail::before {
+  content: "";
+  position: absolute;
+  background: url(../img/mail.svg) no-repeat 0 center;
+  background-size: contain;
+  width: 20px;
+  height: 16px;
+  top: 1px;
+  left: -1px;
+}
+.container main .header .contacts li .workPlace::before {
+  content: "";
+  position: absolute;
+  background: url(../img/workadrs.svg) no-repeat 0 center;
+  background-size: contain;
+  width: 12px;
+  height: 17px;
+  top: 1px;
+  left: 2px;
+}
+.container main .header .contacts li .geoloc::before {
+  content: "";
+  position: absolute;
+  background: url(../img/geoloc.svg) no-repeat 0 center;
+  background-size: contain;
+  width: 11px;
+  height: 17px;
+  top: 1px;
+  left: 3px;
+}
+.container main .mainSections {
+  margin-left: 92px;
+  margin-right: 50px;
+}
+.container main .mainSections h3 {
+  margin-left: 11px;
+  color: #42489E;
+  font-size: 22px;
+  font-weight: 700;
 }
 .container aside {
   width: 450px;
   background: linear-gradient(180deg, #6D5DA8 0%, #43479E 100%);
   padding: 100px;
+}
+.container aside h3 {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
 }

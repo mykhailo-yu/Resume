@@ -15,6 +15,7 @@ body {
         padding-left: 68px;
         .header {
             display: flex;
+            margin-bottom: 63px;
             .headerImg {
                 img {
                     width: 260px;
@@ -64,10 +65,60 @@ body {
                         color: inherit;
                         padding-left: 26px;
                     }
-                    .tel {
+                    .tel, .mail, .workPlace, .geoloc {
+                        position: relative;
+                    }
+                    .tel::before {
+                        content: "";
+                        position: absolute;
                         background: url(../img/tel.svg) no-repeat 0 center;
+                        background-size: contain;
+                        width: 16px;
+                        height: 17px;
+                        top: 1px;
+                        left: 1px;
+                    }
+                    .mail::before {
+                        content: "";
+                        position: absolute;
+                        background: url(../img/mail.svg) no-repeat 0 center;
+                        background-size: contain;
+                        width: 20px;
+                        height: 16px;
+                        top: 1px;
+                        left: -1px;
+                    }
+                    .workPlace::before {
+                        content: "";
+                        position: absolute;
+                        background: url(../img/workadrs.svg) no-repeat 0 center;
+                        background-size: contain;
+                        width: 12px;
+                        height: 17px;
+                        top: 1px;
+                        left: 2px;
+                    }
+                    .geoloc::before {
+                        content: "";
+                        position: absolute;
+                        background: url(../img/geoloc.svg) no-repeat 0 center;
+                        background-size: contain;
+                        width: 11px;
+                        height: 17px;
+                        top: 1px;
+                        left: 3px;
                     }
                 }
+            }
+        }
+        .mainSections {
+            margin-left: 92px;
+            margin-right: 50px;
+            h3 {
+                margin-left: 11px;
+                color: #42489E;
+                font-size: 22px;
+                font-weight: 700;
             }
         }
     }
@@ -75,5 +126,10 @@ body {
         width: 450px;
         background: linear-gradient(180deg, #6D5DA8 0%, #43479E 100%);
         padding: 100px;
+        h3 {
+            color: #FFFFFF;
+            font-size: 22px;
+            font-weight: 700;
+        }
     }
 }
